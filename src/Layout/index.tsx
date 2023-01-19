@@ -3,11 +3,12 @@ import React from "react";
 
 type LayoutProps = {
   children: React.ReactNode;
+  className: string;
 };
 
-export const Layout = ({children}: LayoutProps) => {
+export const Layout = ({ children, className }: LayoutProps) => {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className={`flex flex-col min-h-screen ${className}`}>
       <Head>
         <title>APP</title>
         <meta content="The next generation app" name="My App" />

@@ -1,23 +1,30 @@
 /** @type {import('tailwindcss').Config} */
+const {fontFamily} = require("tailwindcss/defaultTheme");
+
 module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
-        background: "#0f0e17",
-        headline: "#fffffe",
-        parragraf: "#a7a9be",
-        "button-text": "#fffffe",
-        primary: "#ff8906",
-        secondary: "#f25f4c",
-        tertiary: "#e53170",
+        "background-light": "#F8F8FB",
+        "background-dark": "#141625",
+        "primary-light": "#7C5DFA",
+        "primary-dark": "#9277FF",
+        "secondary-light": "#888EB0",
+        "secondary-dark": "#DFE3FA",
+        "error-light": "#9277FF",
+        "error-dark": "#EC5757",
+        "font-pri-light": "#0C0E16",
+        "font-sec-light": "#7E88C3",
+        "side-menu-light": "#252945",
+        "side-menu-dark": "#1E2139",
       },
       backgroundImage: (theme) => ({
         "gradient-rainbow":
           "linear-gradient(81.66deg, #ff8906 7.21%, #f25f4c 45.05%, #e53170 78.07%)",
       }),
       fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
+        sans: ["var(--font-spartan)", ...fontFamily.sans ],
       },
       content: {
         example: "url('../assets/brush.png')",

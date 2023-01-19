@@ -6,15 +6,11 @@ html,
 body
 {
   @apply h-full;
-  @apply bg-background;
-  @apply font-poppins;
-  @apply text-white;
+  @apply bg-background-light;
+  @apply font-sans;
+  @apply text-font-pri-light;
 }
 
-h1 {
-  @apply text-headline;
-}
-
-p { 
-  @apply text-parragraf;
+button {
+  @apply rounded-full;
 }
