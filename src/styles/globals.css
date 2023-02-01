@@ -12,5 +12,36 @@ body
 }
 
 button {
-  @apply rounded-full;
+  @apply inline-block px-6 py-4 rounded-full shadow-xl font-semibold text-xs tracking-wide;
+}
+
+@layer components{
+  .btn-primary{
+    @apply text-white bg-primary-light hover:bg-primary-dark py-2 pl-2 pr-4
+  }
+  .btn-secondary{
+    @apply text-white  bg-primary-light hover:bg-primary-dark
+  }
+  .btn-tertary{
+    @apply bg-[#F9FAFE] text-font-sec-light hover:bg-secondary-dark
+  }
+  .btn-error{
+    @apply bg-error-dark text-white hover:bg-[#FF9797]
+  }
+  .btn-quaternary{
+    @apply bg-white text-font-sec-light hover:bg-secondary-dark
+  }
+  .btn-quaternary-light{
+    @apply bg-white text-font-sec-light hover:bg-secondary-dark
+  }
+  .btn-quaternary-dark{
+    @apply bg-side-menu-light text-secondary-dark hover:bg-white
+  }
+  .btn-quinary-light{
+    @apply bg-[#373B53] text-secondary-light hover:bg-font-pri-light
+  }
+  .btn-quinary-dark{
+    @apply bg-[#373B53] text-secondary-dark hover:bg-side-menu-dark
+  }
+
 }
