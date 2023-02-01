@@ -24,7 +24,7 @@ module.exports = {
           "linear-gradient(81.66deg, #ff8906 7.21%, #f25f4c 45.05%, #e53170 78.07%)",
       }),
       fontFamily: {
-        sans: ["var(--font-spartan)", ...fontFamily.sans ],
+        sans: ["var(--font-spartan)", ...fontFamily.sans],
       },
       content: {
         example: "url('../assets/brush.png')",
